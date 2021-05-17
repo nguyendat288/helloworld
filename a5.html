@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let soluong =+prompt("enter the total number of primes = ");
+let count =0;
+for(let num=2;count<soluong;num++){
+    let i=2;
+   while(num%i!=0){
+       i++;
+   }
+   if(i==num) {
+       document.write(num);
+       count++;
+   }
+document.write('&nbsp');
+}
+    </script>
+</body>
+</html>
