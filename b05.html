@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n=+prompt("Enter the amount you deposit in the bank =");
+  let x=+prompt("Enter the number of months you send money =");
+  let result;
+  for(i=1;i<=x;i++){
+    result=n*0.03;
+    n=n+result;
+  }
+  document.write(n);
+</script>
+</body>
+</html>
