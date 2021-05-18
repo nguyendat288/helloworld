@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n=+prompt("Enter n=");
+  let i,j;
+  for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j++){
+      if(i==n||j<=i)
+      {
+        document.write("*");
+      }
+      else document.write(" &nbsp&nbsp ");
+    }
+    document.write("<br>");
+  }
+  document.write("<br>");
+  document.write("<br>");
+  document.write("<br>");
+
+  for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j++){
+      if(i==1||j<=n-i+1)
+      {
+        document.write("*");
+      }
+      else document.write(" &nbsp&nbsp ");
+    }
+    document.write("<br>");
+  }
+  document.write("<br>");
+  document.write("<br>");
+  document.write("<br>");
+
+  for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j++){
+      if(i==n||j>=n-i+1)
+      {
+        document.write("*&nbsp");
+      }
+      else document.write(" &nbsp&nbsp ");
+    }
+    document.write("<br>");
+  }
+  document.write("<br>");
+  document.write("<br>");
+  document.write("<br>");
+
+  for(i = 1; i <= n; i++) {
+    for(j = 1; j <= n; j++){
+      if(i==1||j>=i)
+      {
+        document.write("*&nbsp");
+      }
+      else document.write(" &nbsp&nbsp ");
+    }
+    document.write("<br>");
+  }
+</script>
+</body>
+</html>
