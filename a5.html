@@ -7,18 +7,70 @@
 <body>
 <script>
 let soluong =+prompt("enter the total number of primes = ");
-let count =0;
-for(let num=2;count<soluong;num++){
-    let i=2;
-   while(num%i!=0){
-       i++;
-   }
-   if(i==num) {
-       document.write(num);
-       count++;
-   }
-document.write('&nbsp');
+
+// while (count<soluong){
+//     let flag=true;
+//     for (let i = 2; i < n; i++) {
+//         if(n%i==0)
+//             flag=false;
+//     }
+//     if(flag){
+//         document.write(n+'<br>');
+//         count++;
+//     }
+//     n++;
+// }
+
+listPrime(soluong);
+sumPrime(soluong);
+
+function sumPrime(soluong) {
+    let count =0;
+    let n =10;
+    let total=0;
+    while (count<soluong){
+        if(checkPrime(n)){
+            count++;
+            total+=n;
+        }
+        n++;
+    }
+    document.write(total);
 }
+function listPrime(soluong) {
+    let count =0;
+    let n =10;
+    while (count<soluong){
+        if(checkPrime(n)){
+            document.write(n+'<br>');
+            count++;
+        }
+        n++;
+    }
+}
+
+function checkPrime(n) {
+    let flag=true;
+    for (let i = 2; i < n; i++) {
+        if(n%i==0)
+            flag=false;
+    }
+
+    return flag;
+}
+
+// let num=Math.floor()
+// for(let num=2;count<soluong;num++){
+//     let i=2;
+//    while(num%i!=0){
+//        i++;
+//    }
+//    if(i==num) {
+//        document.write(num);
+//        count++;
+//    }
+// document.write('&nbsp');
+// }
     </script>
 </body>
 </html>
